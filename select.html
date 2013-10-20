@@ -156,8 +156,8 @@ var helper = (function() {
       var request = gapi.client.plus.people.get( {'userId' : 'me'} );
       var activities = gapi.client.plus.activities.list( {'userId' : 'me'}, "public" );
       activities.execute( function(act) {
-          console.log($("act"));
-          $('#profile').append($("act"));
+          console.log($(act));
+          $('#profile').append($(act));
       });
       request.execute( function(profile) {
           console.log(profile);
