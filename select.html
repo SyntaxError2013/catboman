@@ -64,29 +64,26 @@
             </ul>
         </div>
     </div>
-
+    <div class="pure-g-r" id="gConnect">
+      <button class="g-signin"
+          data-scope="https://www.googleapis.com/auth/plus.login"
+          data-requestvisibleactions="http://schemas.google.com/AddActivity"
+          data-clientId="695004088748-bhblgrp63ndtpc3kj36ku0usdjaek7cn.apps.googleusercontent.com"
+          data-accesstype="offline"
+          data-callback="onSignInCallback"
+          data-theme="dark"
+          data-cookiepolicy="single_host_origin">
+      </button>
+    </div>
     <div class="pure-g-r content">
-      <div class="pure-g-r" style="content-align:center;">
-        <a class="heading" href="">Pensieve</a>
-      </div>
-      <div class="pure-g-r translucent">
-        <div id="authOps" style="display:none">
-          <button id="disconnect" >Disconnect your Google account from this app</button>
-
-          <h2>User's profile information</h2>
-          <p>This data is retrieved client-side by using the Google JavaScript API
-          client library.</p>
+      <div class="pure-u-1-5 translucent-sidebar">
+        <div class="pure-g-r" style="content-align:center;">
+          <a class="heading-side" href="">Pensieve</a>
+        </div>
+        <div id="authOps">
           <div id="profile"></div>
-
-          <h2>User's friends that are visible to this app</h2>
-          <p>This data is retrieved from your server, where your server makes
-          an authorized HTTP request on the user's behalf.</p>
-          <p>If your app uses server-side rendering, this is the section you
-          would change using your server-side templating system.</p>
           <div id="visiblePeople"></div>
-
-          <h2>Authentication Logs</h2>
-          <pre id="authResult"></pre>
+          <!--<pre id="authResult"></pre>-->
         </div>
       </div>
     </div>

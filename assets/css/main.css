@@ -1,11 +1,16 @@
 body {
 	background-image: url('/pensieve/assets/images/pensieve.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: "Asul", sans-serif;
 }
 
 .content {
 	
+}
+
+.pure-menu.pure-menu-horizontal {
+	background: rgba(255, 255, 255, 0.83);
 }
 
 .pure-g-r {
@@ -25,13 +30,31 @@ body {
 	/*position: absolute;
 	left: 45%;
 	top: 30%;*/
-	font-size: 34px;
 	z-index: 10;
 	color: #ffffff;
 	background-color: rgb(28, 28, 37);
 	box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.2);
 	text-align: center;
 	font-size: 4em;
+}
+
+.heading-side {
+	/* height: 18%; */
+	display:block;
+	/* line-height:1.5em; */
+	padding: 10px 10px;
+	text-decoration:none;
+	white-space:nowrap;
+	/*position: absolute;
+	left: 45%;
+	top: 30%;*/
+	z-index: 10;
+	color: #ffffff;
+	background-color: rgb(28, 28, 37);
+	box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	font-size: 4em;
+	margin-bottom: 10px;
 }
 
 .translucent {
@@ -42,6 +65,17 @@ body {
 	color: #ffffff;
 	text-align: center;
 	font-size: 2em;
+	vertical-align: middle;
+}
+
+.translucent-sidebar {
+	background-color: rgba(0, 0, 0, 0.66);
+	/*padding-top: 50px;
+    padding-bottom: 25px;
+	padding-left: 20%;*/
+	color: #ffffff;
+	text-align: center;
+	/*font-size: 2em;*/
 	vertical-align: middle;
 }
 
