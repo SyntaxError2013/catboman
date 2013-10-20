@@ -159,7 +159,7 @@
           })();
         </script>
 
-        <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
+ <!--       <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script> -->
 
         <div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
 
