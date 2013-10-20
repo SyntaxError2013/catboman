@@ -1,11 +1,11 @@
 body {
+	background-image: url('/pensieve/assets/images/pensieve.jpg');
+	background-size: cover;
 	font-family: "Asul", sans-serif;
 }
 
 .content {
-	background-image: url('/pensieve/assets/images/pensieve.jpg');
-	background-size: cover;
-	height: 90%;
+	
 }
 
 .pure-g-r {
@@ -15,7 +15,7 @@ body {
 }
 
 .heading {
-	margin: 10% 0 0 40%;
+	margin: 10% 0 10% 40%;
 	height: 18%;
 	display:block;
 	line-height:1.5em;
@@ -36,8 +36,8 @@ body {
 
 .translucent {
 	background-color: rgba(0, 0, 0, 0.44);
-	padding-top: 10px;
-    padding-bottom: 10px;
+	padding-top: 50px;
+    padding-bottom: 25px;
 	padding-left: 20%;
 	color: #ffffff;
 	text-align: center;
@@ -45,6 +45,7 @@ body {
 	vertical-align: middle;
 }
 
-#gconnect {
-	margin-left: 30%;
+#gConnect {
+	margin-top: 20px;
+	margin-left: 35%;
 }
