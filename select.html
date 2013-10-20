@@ -64,7 +64,7 @@
             </ul>
         </div>
     </div>
-    <!--<div class="pure-g-r" id="gConnect">
+    <div class="pure-g-r" id="gConnect" style="display:none;">
       <button class="g-signin"
           data-scope="https://www.googleapis.com/auth/plus.login"
           data-requestvisibleactions="http://schemas.google.com/AddActivity"
@@ -74,14 +74,14 @@
           data-theme="dark"
           data-cookiepolicy="single_host_origin">
       </button>
-    </div>-->
+    </div>
     <div class="pure-g-r">
       <div class="pure-u-1-5 translucent-sidebar">
         <div class="pure-g-r" style="content-align:center;">
           <a class="heading-side" href="">Pensieve</a>
         </div>
         <div id="authOps">
-          <div id="profile">xkclmd<br>czbxhjcgzsyu<br>zxhbjvgsduyz<br></div>
+          <div id="profile"></div>
           <!--<div id="visiblePeople"></div>
           <pre id="authResult"></pre>-->
         </div>
@@ -154,7 +154,11 @@ var helper = (function() {
      */
     renderProfile: function() {
       var request = gapi.client.plus.people.get( {'userId' : 'me'} );
-      console.log(request);
+      var activities = gapi.client.plus.activities.list( {'userId' : 'me'}, "public" );
+      activities.execute( function(act) {
+          console.log($("act"));
+          $('#profile').append($("act"));
+      });
       request.execute( function(profile) {
           console.log(profile);
           $('#profile').empty();

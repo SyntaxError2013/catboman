@@ -18,6 +18,12 @@
 
         <link rel="stylesheet" href="assets/css/main.css">
 
+        <link rel="stylesheet" href="assets/css/posts.css">
+
+        <script src="//cdn.sdslabs.co.in/cdnjs/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <script src="feeds.js"></script>
+
     </head>
 
     <body>
@@ -46,9 +52,9 @@
                   </div>
                   <div class="pure-button">Download this album</div>
                 </div>
-                <div class="pure-u-4-5 grid">
+                <div class="pure-u-4-5 grid gplus2">
                     <div class="pure-u-1-3 photo-box">
-                        <a href="http://www.flickr.com/photos/95572727@N00/4070581709/">
+                        <!--<a href="http://www.flickr.com/photos/95572727@N00/4070581709/">
                             <img src="http://farm3.staticflickr.com/2447/4070581709_1204f25e3b.jpg" alt="Photo of a Bamboo forest in Kyoto.">
                         </a>
 
@@ -57,7 +63,7 @@
                             <span>
                                 by <a href="http://www.flickr.com/photos/95572727@N00/4070581709/">Stuck in Customs</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
                             </span>
-                        </aside>
+                        </aside>-->
                     </div>
 
                     <div class="pure-u-1-3 photo-box">
@@ -161,5 +167,18 @@
                 }, 'a[href="#"]');
             });
         </script>
-        </script>
+                <script>
+                        $(function() {
+        //                        $('.gplus').kycoGooglePlusFeed('114986089777689431996');
+
+                                $('.gplus2').kycoGooglePlusFeed({
+                                        id: '114986089777689431996',
+                                        feedPosts: 20, // Feed posts to show on load
+                                        postsIncrement: 1, // Number of feed posts to show on "Show more" button click
+                                        maxPosts: 20, // Max number of posts to pull before "Show more" will go to Google+, cannot excced 20 because of Google API in use
+                                        profileImageSize: 150, // Max is 250
+                                        lang: 'en'
+                                });
+                        });
+                </script>
 </html>
