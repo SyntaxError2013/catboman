@@ -104,8 +104,6 @@
     would change using your server-side templating system.</p>
     <div id="visiblePeople"></div>
 
-    <h2>Authentication Logs</h2>
-    <pre id="authResult"></pre>
   </div>
 </body>
 <script type="text/javascript">
@@ -144,7 +142,7 @@ var helper = (function() {
     /**
      * Retrieves and renders the authenticated user's Google+ profile.
      */
-    renderProfile: function() {
+/*    renderProfile: function() {
       var request = gapi.client.plus.people.get( {'userId' : 'me'} );
       request.execute( function(profile) {
           $('#profile').empty();
@@ -164,7 +162,7 @@ var helper = (function() {
         });
       $('#authOps').show('slow');
       $('#gConnect').hide();
-    },
+    },*/
     /**
      * Calls the server endpoint to disconnect the app for the user.
      */
