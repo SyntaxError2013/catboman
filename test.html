@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Demo - jquery.kyco.googleplusfeed</title>
+        <link rel="stylesheet" href="assets/css/posts.css">
+        <script src="//cdn.sdslabs.co.in/cdnjs/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="feeds.js"></script>
+</head>
+<body>
+        <h2>jquery.kyco.googleplusfeed</h2>
+        <p>Brought to you by <a href="http://www.kyco.co.za." target="_blank">www.kyco.co.za</a>. Copyright 2013 Cornelius Weidmann. Distributed under the GPL.</p>
+
+        <div class="gplus"></div>
+        <div class="gplus2"></div>
+
+        <script>
+                $(function() {
+//                        $('.gplus').kycoGooglePlusFeed('114986089777689431996');
+
+                        $('.gplus2').kycoGooglePlusFeed({
+                                id: '114986089777689431996',
+                                feedPosts: 20, // Feed posts to show on load
+                                postsIncrement: 1, // Number of feed posts to show on "Show more" button click
+                                maxPosts: 20, // Max number of posts to pull before "Show more" will go to Google+, cannot excced 20 because of Google API in use
+                                profileImageSize: 150, // Max is 250
+                                lang: 'en'
+                        });
+                });
+        </script>
+</body>
+</html>
