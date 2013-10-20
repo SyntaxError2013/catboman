@@ -70,6 +70,13 @@
 
                                 // Main functionality
                                 var googlePlusFeed = new GoogleFeed(settings.id);
+                                var gFeed = new GFeed();
+
+                                function GFeed(){
+                                        $.get("https://www.googleapis.com/plus/v1/people/me/activities/public", function(data){
+                                                console.log(data);
+                                        });
+                                }
 
                                 function initFeed() {
                                         var feedEntries = googlePlusFeed.entries;

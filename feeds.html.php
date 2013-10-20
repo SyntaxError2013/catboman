@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="assets/css/gallery.css">
 
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/posts.css">
+        <script src="//cdn.sdslabs.co.in/cdnjs/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="feeds.js"></script>
 
         <link rel="stylesheet" href="assets/css/posts.css">
 
@@ -145,6 +148,8 @@
                 </div>
             </div>
         </div>  
+        <div class="gplus"></div>
+        <div class="gplus2"></div>
     </body>
         <script type="text/javascript">
           (function() {
