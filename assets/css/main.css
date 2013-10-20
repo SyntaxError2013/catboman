@@ -1,0 +1,50 @@
+body {
+	font-family: "Asul", sans-serif;
+}
+
+.content {
+	background-image: url('/pensieve/assets/images/pensieve.jpg');
+	background-size: cover;
+	height: 90%;
+}
+
+.pure-g-r {
+	letter-spacing: normal;
+	width: 100%;
+	font-family: "Asul", sans-serif;
+}
+
+.heading {
+	margin: 10% 0 0 40%;
+	height: 18%;
+	display:block;
+	line-height:1.5em;
+	padding: 10px 30px;
+	text-decoration:none;
+	white-space:nowrap;
+	/*position: absolute;
+	left: 45%;
+	top: 30%;*/
+	font-size: 34px;
+	z-index: 10;
+	color: #ffffff;
+	background-color: rgb(28, 28, 37);
+	box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	font-size: 4em;
+}
+
+.translucent {
+	background-color: rgba(0, 0, 0, 0.44);
+	padding-top: 10px;
+    padding-bottom: 10px;
+	padding-left: 20%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+#gconnect {
+	margin-left: 30%;
+}

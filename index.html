@@ -21,7 +21,23 @@
 
 <html>
 <head>
-  <title>{{ APPLICATION_NAME }}</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="A layout example that shows off a responsive photo gallery.">
+
+  <title>Pensieve</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Asul' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="assets/css/pure-min.css">
+
+  <link rel="stylesheet" href="assets/css/gallery.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Pensieve</title>
   <script type="text/javascript">
   (function() {
     var po = document.createElement('script');
@@ -36,21 +52,44 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
 </head>
 <body>
-  <div id="gConnect">
-    <button class="g-signin"
-        data-scope="https://www.googleapis.com/auth/plus.login"
-        data-requestvisibleactions="http://schemas.google.com/AddActivity"
-        data-clientId="695004088748-bhblgrp63ndtpc3kj36ku0usdjaek7cn.apps.googleusercontent.com"
-        data-accesstype="offline"
-        data-callback="onSignInCallback"
-        data-theme="dark"
-        data-cookiepolicy="single_host_origin">
-    </button>
-  </div>
+  <div>
+    <div class="header">
+        <div class="pure-menu pure-menu-open pure-menu-horizontal">
+            <ul>
+                <li class="pure-menu-selected"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul style="float:right;">
+              <li><a href="" id="disconnect">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pure-g-r content">
+      <div class="pure-g-r" style="content-align:center;">
+        <a class="heading" href="">Pensieve</a>
+      </div>
+      <div class="pure-g-r translucent">
+        Dive into the pool of old, cherished moments of your life. <br>Take a nostalgia tour now:<br>
+        <div class="pure-g-r" id="gConnect">
+          <button class="g-signin"
+              data-scope="https://www.googleapis.com/auth/plus.login"
+              data-requestvisibleactions="http://schemas.google.com/AddActivity"
+              data-clientId="695004088748-bhblgrp63ndtpc3kj36ku0usdjaek7cn.apps.googleusercontent.com"
+              data-accesstype="offline"
+              data-callback="onSignInCallback"
+              data-theme="dark"
+              data-cookiepolicy="single_host_origin">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        Made with love.
+    </div>
+  </div>  
   <div id="authOps" style="display:none">
-    <h2>User is now signed in to the app using Google+</h2>
-    <p>If the user chooses to disconnect, the app must delete all stored
-    information retrieved from Google for the given user.</p>
     <button id="disconnect" >Disconnect your Google account from this app</button>
 
     <h2>User's profile information</h2>
