@@ -139,14 +139,21 @@ var helper = (function() {
      */
     renderProfile: function() {
       var request = gapi.client.plus.people.get( {'userId' : 'me'} );
+      console.log(request);
       request.execute( function(profile) {
+          console.log(profile);
           $('#profile').empty();
           if (profile.error) {
             $('#profile').append(profile.error);
             return;
           }
+          
+          profile.image.url = profile.image.url.substr(0,profile.image.url.length-2);
+          profile.image.url = profile.image.url + '250';
+          var img = '<p><img src=\"' + profile.image.url + '\"></p>';
           $('#profile').append(
-              $('<p><img src=\"' + profile.image.url + '\"></p>'));
+              $(img));
+              //$('<p><img src="https://plus.google.com/s2/photos/profile/' + userId + '?sz=250"></p>'));
           $('#profile').append(
               $('<p>Hello ' + profile.displayName + '!<br />Tagline: ' +
               profile.tagline + '<br />About: ' + profile.aboutMe + '</p>'));
