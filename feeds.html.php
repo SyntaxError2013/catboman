@@ -26,7 +26,7 @@
             <div class="header">
                 <div class="pure-menu pure-menu-open pure-menu-horizontal">
                     <ul>
-                        <li class="pure-menu-selected"><a href="#">Home</a></li>
+                        <li class="pure-menu-selected"><a href="/">Home</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
                     <ul style="float:right;">
